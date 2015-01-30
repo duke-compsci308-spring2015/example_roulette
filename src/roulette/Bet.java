@@ -6,7 +6,7 @@ package roulette;
  * 
  * @author Robert C. Duvall
  */
-public class Bet {
+public abstract class Bet {
     private String myDescription;
     private int myOdds;
 
@@ -15,10 +15,21 @@ public class Bet {
      * 
      * @param description name of this kind of bet
      * @param odds odds given by the house for this kind of bet
+     * 
+     * 
      */
+    public String placeBet(int whichBet){
+    	return null;
+    	
+    }
+    
+    public boolean betIsMade(int whichBet, String betChoice, Wheel myWheel){
+    	return false;
+    }
     public Bet (String description, int odds) {
         myDescription = description;
         myOdds = odds;
+        
     }
 
     /**
