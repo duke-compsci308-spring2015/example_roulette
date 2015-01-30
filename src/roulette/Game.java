@@ -2,7 +2,6 @@ package roulette;
 
 import util.ConsoleReader;
 
-
 /**
  * Plays a game of roulette.
  * 
