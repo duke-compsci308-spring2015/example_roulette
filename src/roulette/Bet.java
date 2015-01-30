@@ -1,15 +1,15 @@
 package roulette;
-
+import util.ConsoleReader;
 
 /**
  * Represents player's attempt to bet on outcome of the roulette wheel's spin.
  * 
  * @author Robert C. Duvall
  */
-public class Bet {
+public abstract class Bet {
     private String myDescription;
     private int myOdds;
-
+      
     /**
      * Constructs a bet with the given name and odds.
      * 
@@ -20,6 +20,7 @@ public class Bet {
         myDescription = description;
         myOdds = odds;
     }
+    
 
     /**
      * @return odds given by the house for this kind of bet
@@ -34,4 +35,17 @@ public class Bet {
     public String getDescription () {
         return myDescription;
     }
+    
+    /**
+     * Checks if the given bet is won or lost given user's choice and result of spinning the wheel.
+     *
+     * @param whichBet specific bet chosen by the user
+     * @param betChoice specific value user chose to try to win the bet
+     */
+    public abstract boolean betIsMade(String betChoice, Wheel myWheel);
+    
+    /**
+     * Place the given bet by prompting user for specific information need to complete that bet.
+     */
+    public abstract String placeBet();
 }
