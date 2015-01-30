@@ -34,4 +34,13 @@ public class Bet {
     public String getDescription () {
         return myDescription;
     }
+    
+    public String betString(){
+    	return "";
+    }
+    
+    public boolean betResults(Wheel myWheel, String betChoice) {
+    	return false;
+    }
+    
 }
