@@ -13,7 +13,7 @@ public class Game {
     private static final String DEFAULT_NAME = "Roulette";
     private Wheel myWheel;
     // bets player can make
-    private Bet[] myPossibleBets = new Bet[3];
+    private Bet[] myPossibleBets;
     
 
     /**
@@ -21,9 +21,12 @@ public class Game {
      */
     public Game () {
         myWheel = new Wheel();
-        myPossibleBets[0] = new RedAndBlack("Red or Black", 1,myWheel);
-        myPossibleBets[1] = new EvenAndOdd("Odd or Even", 1,myWheel);
-        myPossibleBets[2] = new Pick3("Three in a Row", 11,myWheel);
+        Bet[] temp = {
+        		new RedAndBlack("Red or Black", 1,myWheel),
+        		new EvenAndOdd("Odd or Even", 1,myWheel),
+        		new Pick3("Three in a Row", 11,myWheel)
+        };
+        myPossibleBets = temp;
     }
 
     /**
