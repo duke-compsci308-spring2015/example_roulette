@@ -34,4 +34,14 @@ public class Bet {
     public String getDescription () {
         return myDescription;
     }
+    
+	protected String placeBet() {
+		return null;
+	}
+	protected boolean betIsMade(Wheel w, String betChoice){
+	return false;
+	}
+	
+	
+	
 }
