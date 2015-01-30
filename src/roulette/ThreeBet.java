@@ -16,9 +16,10 @@ public class ThreeBet extends Bet{
 	}
 
 	@Override
-	public String placeBet(int whichBet) {
+	public String placeBet() {
 		// TODO Auto-generated method stub
-		return "\n" + ConsoleReader.promptRange("Enter first of three consecutive numbers",
+		System.out.println();
+		return ""+ConsoleReader.promptRange("Enter first of three consecutive numbers",
                 1, Wheel.NUM_SPOTS - 3);
 	}
 

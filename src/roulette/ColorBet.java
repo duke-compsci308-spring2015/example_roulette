@@ -16,9 +16,10 @@ public class ColorBet extends Bet {
 		}
 
 	@Override
-	public String placeBet(int whichBet) {
+	public String placeBet() {
 		// TODO Auto-generated method stub
-		return "\n" + ConsoleReader.promptOneOf("Please bet", Wheel.BLACK, Wheel.RED);
+		System.out.println();
+		return ConsoleReader.promptOneOf("Please bet", Wheel.BLACK, Wheel.RED);
 	}
 
 }

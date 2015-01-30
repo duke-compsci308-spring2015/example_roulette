@@ -17,9 +17,10 @@ public class EvenOddBet extends Bet {
 		}
 
 	@Override
-	public String placeBet(int whichBet) {
+	public String placeBet() {
 		// TODO Auto-generated method stub
-		return "\n" + ConsoleReader.promptOneOf("Please bet", "even", "odd");
+		System.out.println();
+		return ConsoleReader.promptOneOf("Please bet", "even", "odd");
 	}
 
 }
