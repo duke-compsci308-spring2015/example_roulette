@@ -1,4 +1,6 @@
-package roulette;
+package Bet;
+
+import roulette.Wheel;
 
 
 /**
@@ -6,9 +8,10 @@ package roulette;
  * 
  * @author Robert C. Duvall
  */
-public class Bet {
+public abstract class Bet {
     private String myDescription;
     private int myOdds;
+    protected Wheel myWheel;
 
     /**
      * Constructs a bet with the given name and odds.
@@ -19,6 +22,7 @@ public class Bet {
     public Bet (String description, int odds) {
         myDescription = description;
         myOdds = odds;
+        myWheel = new Wheel();
     }
 
     /**
@@ -34,4 +38,7 @@ public class Bet {
     public String getDescription () {
         return myDescription;
     }
+    
+    public abstract String askBet();
+    public abstract boolean winOrLose(String betChoice);
 }
