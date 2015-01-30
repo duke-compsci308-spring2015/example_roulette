@@ -55,7 +55,8 @@ public class Game {
         myWheel.spin();
         System.out.println(String.format("Dropped into %s %d", myWheel.getColor(), myWheel.getNumber()));
         
-        System.out.println(getResult(myPossibleBets[whichBet].checkBet(myWheel, betChoice)));
+        //System.out.println(getResult(myPossibleBets[whichBet].checkBet(myWheel, betChoice)));
+        
         if (myPossibleBets[whichBet].checkBet(myWheel, betChoice)) {
             System.out.println("*** Congratulations :) You win ***");
             amount *= myPossibleBets[whichBet].getOdds();
@@ -78,7 +79,9 @@ public class Game {
         return ConsoleReader.promptRange("Please make a choice", 1, myPossibleBets.length) - 1;
     }
     
+    /*
     private String getResult(boolean result) {
     	return result?"*** Congratulations :) You win ***":"*** Sorry :( You lose ***";
     }
+    */
 }
