@@ -1,4 +1,7 @@
-package roulette;
+package bet;
+
+import roulette.Wheel;
+import util.ConsoleReader;
 
 
 /**
@@ -6,7 +9,7 @@ package roulette;
  * 
  * @author Robert C. Duvall
  */
-public class Bet {
+abstract public class Bet {
     private String myDescription;
     private int myOdds;
 
@@ -34,4 +37,9 @@ public class Bet {
     public String getDescription () {
         return myDescription;
     }
+    
+    abstract public String placeBet();
+    
+    abstract public boolean checkBet(Wheel myWheel, String betChoice);
+
 }
