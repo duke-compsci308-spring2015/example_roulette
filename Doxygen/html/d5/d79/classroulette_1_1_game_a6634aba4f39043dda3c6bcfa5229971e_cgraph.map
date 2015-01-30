@@ -1,0 +1,16 @@
+<map id="roulette.Game.play" name="roulette.Game.play">
+<area shape="rect" id="node2" href="$d5/d79/classroulette_1_1_game.html#a6c9017ccc8b95e0f5fb69681e78d9cac" title="roulette.Game.betIsMade" alt="" coords="223,59,409,86"/>
+<area shape="rect" id="node3" href="$d6/d07/classroulette_1_1_wheel.html#af6699aa89a029f8b8900f0970db8cdaa" title="roulette.Wheel.getColor" alt="" coords="491,22,663,48"/>
+<area shape="rect" id="node4" href="$d6/d07/classroulette_1_1_wheel.html#ac4db6f5f5c751d9944b605c79e20db6a" title="roulette.Wheel.getNumber" alt="" coords="482,98,673,124"/>
+<area shape="rect" id="node5" href="$d8/d06/classroulette_1_1_gambler.html#a63da3e4ca7ef7e43e03917df1c16dc12" title="roulette.Gambler.getBankroll" alt="" coords="213,160,419,187"/>
+<area shape="rect" id="node6" href="$d1/daa/classroulette_1_1_bet.html#a2a5088e88de8398d09c81a19e5ecfe96" title="roulette.Bet.getOdds" alt="" coords="238,211,394,238"/>
+<area shape="rect" id="node7" href="$d5/d79/classroulette_1_1_game.html#a01744cfd81ef2acad477be49a93c7ee7" title="roulette.Game.placeBet" alt="" coords="229,262,403,288"/>
+<area shape="rect" id="node10" href="$dd/d87/classutil_1_1_console_reader.html#ac25a6a9c672f8da0b7f37104d33a6cd5" title="util.ConsoleReader.prompt\lRange" alt="" coords="482,305,673,346"/>
+<area shape="rect" id="node12" href="$d5/d79/classroulette_1_1_game.html#ab1fc928530a1dc083904ba2ff19e1e8a" title="roulette.Game.promptForBet" alt="" coords="212,363,420,390"/>
+<area shape="rect" id="node14" href="$d6/d07/classroulette_1_1_wheel.html#a27fab03e8b4d589c03199ac774c06ffa" title="roulette.Wheel.spin" alt="" coords="244,414,388,440"/>
+<area shape="rect" id="node15" href="$d8/d06/classroulette_1_1_gambler.html#a5bd476cef22a22e8711d9d3f7acbd8b2" title="roulette.Gambler.updateBankroll" alt="" coords="201,464,431,491"/>
+<area shape="rect" id="node8" href="$dd/d87/classutil_1_1_console_reader.html#a6b469ca2ba9c0f0e52634a3affb2e9e5" title="util.ConsoleReader.prompt\lOneOf" alt="" coords="731,246,922,288"/>
+<area shape="rect" id="node9" href="$dd/d87/classutil_1_1_console_reader.html#a1c9f3a0d6f36a1b8366df3c29c97f22a" title="util.ConsoleReader.prompt\lString" alt="" coords="979,276,1170,317"/>
+<area shape="rect" id="node11" href="$dd/d87/classutil_1_1_console_reader.html#a501aaaee9e742c28b8731598c964d82e" title="util.ConsoleReader.promptInt" alt="" coords="723,312,930,339"/>
+<area shape="rect" id="node13" href="$d1/daa/classroulette_1_1_bet.html#a0aec26450ea5aeb27412b75544b625ab" title="roulette.Bet.getDescription" alt="" coords="480,371,675,398"/>
+</map>
