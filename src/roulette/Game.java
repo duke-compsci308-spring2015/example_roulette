@@ -44,8 +44,7 @@ public class Game {
     public void play (Gambler player) {
         int amount = ConsoleReader.promptRange("How much do you want to bet",
                                                0, player.getBankroll());
-        int whichBet = promptForBet();
-        Bet b = myPossibleBets[whichBet];
+        Bet b = promptForBet();
         String betChoice = b.placeBet();
 
         System.out.print("Spinning ...");
@@ -53,11 +52,12 @@ public class Game {
         System.out.println(String.format("Dropped into %s %d", myWheel.getColor(), myWheel.getNumber()));
         if (b.betIsMade(myWheel, betChoice)) {
             System.out.println("*** Congratulations :) You win ***");
-            amount *= myPossibleBets[whichBet].getOdds();
+            amount *= b.getOdds();
         }
         else {
             System.out.println("*** Sorry :( You lose ***");
-            amount *= -1;
+            amount /= -1;
+            
         }
         player.updateBankroll(amount);
     }
@@ -65,12 +65,12 @@ public class Game {
     /**
      * Prompt the user to make a bet from a menu of choices.
      */
-    private int promptForBet () {
+    private Bet promptForBet () {
         System.out.println("You can make one of the following types of bets:");
         for (int k = 0; k < myPossibleBets.length; k++) {
             System.out.println(String.format("%d) %s", (k + 1), myPossibleBets[k].getDescription()));
         }
-        return ConsoleReader.promptRange("Please make a choice", 1, myPossibleBets.length) - 1;
+        return myPossibleBets[ConsoleReader.promptRange("Please make a choice", 1, myPossibleBets.length) - 1];
     }
 
 
