@@ -13,9 +13,9 @@ public class Game {
     private static final String DEFAULT_NAME = "Roulette";
     // bets player can make
     private Bet[] myPossibleBets = { 
-        new Bet("Red or Black", 1),
-        new Bet("Odd or Even", 1),
-        new Bet("Three in a Row", 11)
+        new ColorBet("Red or Black", 1),
+        new EvenOddBet("Odd or Even", 1),
+        new NumberBet("Three in a Row", 11)
     };
     private Wheel myWheel;
 
@@ -45,12 +45,13 @@ public class Game {
         int amount = ConsoleReader.promptRange("How much do you want to bet",
                                                0, player.getBankroll());
         int whichBet = promptForBet();
-        String betChoice = placeBet(whichBet);
+        Bet currentBet = myPossibleBets[whichBet];
+        String betChoice = currentBet.placeBet();
 
         System.out.print("Spinning ...");
         myWheel.spin();
         System.out.println(String.format("Dropped into %s %d", myWheel.getColor(), myWheel.getNumber()));
-        if (betIsMade(whichBet, betChoice)) {
+        if (currentBet.betIsMade(myWheel, betChoice)) {
             System.out.println("*** Congratulations :) You win ***");
             amount *= myPossibleBets[whichBet].getOdds();
         }
@@ -77,6 +78,7 @@ public class Game {
      *
      * @param whichBet specific bet chosen by the user
      */
+    /*
     private String placeBet (int whichBet) {
         String result = "";
         if (whichBet == 0) {
@@ -92,6 +94,7 @@ public class Game {
         System.out.println();
         return result;
     }
+    */
 
     /**
      * Checks if the given bet is won or lost given user's choice and result of spinning the wheel.
@@ -99,20 +102,20 @@ public class Game {
      * @param whichBet specific bet chosen by the user
      * @param betChoice specific value user chose to try to win the bet
      */
+    /*
     private boolean betIsMade (int whichBet, String betChoice) {
         if (whichBet == 0) {
             return myWheel.getColor().equals(betChoice);
         }
         else if (whichBet == 1) {
-            return (myWheel.getNumber() % 2 == 0 && betChoice.equals("even")) ||
-                   (myWheel.getNumber() % 2 == 1 && betChoice.equals("odd"));
+            
         }
         else if (whichBet == 2) {
-            int start = Integer.parseInt(betChoice);
-            return (start <= myWheel.getNumber() && myWheel.getNumber() < start + 3);
+
         }
         else {
             return false;
         }
     }
+    */
 }
