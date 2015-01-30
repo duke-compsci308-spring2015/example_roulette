@@ -17,7 +17,6 @@ public class Game {
         new NumberBet("Three in a Row", 11)
     };
     private Wheel myWheel;
-
     /**
      * Construct the game.
      */
