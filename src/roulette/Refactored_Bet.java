@@ -15,4 +15,9 @@ public class Refactored_Bet extends Bet {
 		System.out.println();
 		return result;
 	}
+	
+	public boolean checkBet(String s, int i, Wheel w){
+		return w.getColor().equals(s);
+		
+	}
 }
