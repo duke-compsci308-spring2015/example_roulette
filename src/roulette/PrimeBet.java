@@ -14,7 +14,7 @@ public class PrimeBet extends Bet{
 
 	@Override
 	protected String promptConsole() {
-		return ConsoleReader.promptOneOf("Please bet", "Prime", "Non-prime");
+		return ConsoleReader.promptOneOf("Please bet", "prime", "non-prime");
 	}
 
 	@Override
