@@ -1,2 +1,2 @@
 # example_roulette
-Program to refactor that plays a game of roulette
+Pair: Bojia Chen(bc62) & Sean Scott(sas75)
