@@ -41,13 +41,14 @@ public class Gambler {
     public boolean isSolvent () {
         return (myMoney > 0);
     }
-
-    /**
-     * Changes the gambler's bankroll to reflect the given amount won or lost.
-     * 
-     * @param amount money won (positive) or lost (negative) by the gambler
-     */
-    public void updateBankroll (int amount) {
-        myMoney += amount;
+    
+    public void completeBet(boolean win, int multiplier, int amount) {
+    	if (win) {
+    		System.out.println("*** Congratulations :) You win ***");
+			myMoney += amount*multiplier;
+    	} else {
+    		System.out.println("*** Sorry :( You lose ***");
+			myMoney -= amount;
+    	}
     }
 }

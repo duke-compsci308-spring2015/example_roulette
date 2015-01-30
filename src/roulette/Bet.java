@@ -6,7 +6,7 @@ package roulette;
  * 
  * @author Robert C. Duvall
  */
-public class Bet {
+public abstract class Bet {
     private String myDescription;
     private int myOdds;
 
@@ -34,4 +34,8 @@ public class Bet {
     public String getDescription () {
         return myDescription;
     }
+    
+    protected abstract String promptConsole();
+    
+    protected abstract boolean determineSuccess(Wheel wheel, String betChoice);
 }
