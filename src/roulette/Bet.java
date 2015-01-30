@@ -6,7 +6,7 @@ package roulette;
  * 
  * @author Robert C. Duvall
  */
-public class Bet {
+public abstract class Bet {
     private String myDescription;
     private int myOdds;
 
@@ -27,6 +27,10 @@ public class Bet {
     public int getOdds () {
         return myOdds;
     }
+    
+    public abstract boolean betIsMade(String choice, Wheel wheel);
+    
+    public abstract String placeBet();
 
     /**
      * @return name of this kind of bet
