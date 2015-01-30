@@ -15,7 +15,10 @@ public class Game {
     private Bet[] myPossibleBets = { 
         new RedBlackBet("Red or Black", 1),
         new OddEvenBet("Odd or Even", 1),
-        new ThreeInRowBet("Three in a Row", 11)
+        new ThreeInRowBet("Three in a Row", 11),
+        new HighLowBet("High or Low", 1),
+        new SingleNumBet("Single Number", 35),
+        new TwoInRowBet("Two in a Row", 17)
     };
     private Wheel myWheel;
 
