@@ -9,6 +9,8 @@ package roulette;
 public class Bet {
     private String myDescription;
     private int myOdds;
+    private Wheel myWheel;
+
 
     /**
      * Constructs a bet with the given name and odds.
@@ -16,11 +18,16 @@ public class Bet {
      * @param description name of this kind of bet
      * @param odds odds given by the house for this kind of bet
      */
-    public Bet (String description, int odds) {
+    public Bet (String description, int odds,Wheel wheel) {
         myDescription = description;
         myOdds = odds;
+        myWheel = wheel;
     }
 
+    public Wheel getWheel(){
+    	return myWheel;
+    }
+    
     /**
      * @return odds given by the house for this kind of bet
      */
@@ -34,4 +41,19 @@ public class Bet {
     public String getDescription () {
         return myDescription;
     }
+    
+    /**
+     * Place the given bet by prompting user for specific information need to complete that bet.
+     *
+     * @param whichBet specific bet chosen by the user
+     */
+    public String placeBet() {
+		System.out.println();
+		return null;
+    }
+    
+    public boolean betIsMade (String betChoice) {
+    	return false;
+    }
+
 }
