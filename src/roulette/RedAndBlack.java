@@ -11,7 +11,6 @@ public class RedAndBlack extends Bet{
 	
 	public String placeBet () {
 		String result = ConsoleReader.promptOneOf("Please bet", Wheel.BLACK, Wheel.RED);
-		System.out.println();
 		return result;
 	}
 

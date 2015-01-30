@@ -15,7 +15,6 @@ public class Pick3 extends Bet {
 				+ ConsoleReader.promptRange(
 						"Enter first of three consecutive numbers", 1,
 						Wheel.NUM_SPOTS - 3);
-		System.out.println();
 		return result;
 	}
 

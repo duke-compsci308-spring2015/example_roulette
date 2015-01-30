@@ -46,7 +46,8 @@ public class Game {
                                                0, player.getBankroll());
         int whichBet = promptForBet();
         String betChoice = myPossibleBets[whichBet].placeBet();
-
+        
+        System.out.println();  // to remove duplicated code from Bet subclasses
         System.out.print("Spinning ...");
         myWheel.spin();
         System.out.println(String.format("Dropped into %s %d", myWheel.getColor(), myWheel.getNumber()));

@@ -10,7 +10,6 @@ public class EvenAndOdd extends Bet {
 	}
 	public String placeBet () {
 		String result = ConsoleReader.promptOneOf("Please bet", "even", "odd");
-		System.out.println();
 		return result;
 	}
 
