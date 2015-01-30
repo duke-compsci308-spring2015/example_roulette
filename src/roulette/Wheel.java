@@ -15,6 +15,8 @@ public class Wheel {
     public static final String RED = "red";
     public static final String BLACK = "black";
     public static final String GREEN = "green";
+    public static final String HIGH = "high";
+    public static final String LOW = "low";
     // wheel values --- not quite every other one :(
     private static final String[] OUR_SPOTS = {
         GREEN,
@@ -80,6 +82,14 @@ public class Wheel {
         return OUR_SPOTS[myValue];
     }
 
+    /**
+     * @return color of the current spot on the wheel
+     */
+    public String getHL() {
+        return OUR_SPOTS[myValue];
+    }
+
+ 
     /**
      * @return number of the current spot on the wheel
      */
