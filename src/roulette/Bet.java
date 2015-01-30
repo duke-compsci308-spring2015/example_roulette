@@ -6,7 +6,7 @@ package roulette;
  * 
  * @author Robert C. Duvall
  */
-public class Bet {
+public abstract class Bet {
     private String myDescription;
     private int myOdds;
 
@@ -27,6 +27,8 @@ public class Bet {
     public int getOdds () {
         return myOdds;
     }
+    
+    public abstract String placeBet();
 
     /**
      * @return name of this kind of bet
@@ -34,4 +36,16 @@ public class Bet {
     public String getDescription () {
         return myDescription;
     }
+    
+    public int returnWinningsAndPrintResults(Wheel myWheel, String betChoice){
+    	if(checkWinConditions(myWheel, betChoice)){
+    		System.out.println("*** Congratulations :) You win ***");
+    		return this.getOdds();
+    	}
+    	else{
+    		System.out.println("*** Sorry :( You lose ***");
+    	return -1;
+    }
+    }
+    public abstract boolean checkWinConditions(Wheel myWheel, String betChoice);
 }
