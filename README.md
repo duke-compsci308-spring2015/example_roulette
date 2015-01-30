@@ -1,5 +1,7 @@
 # example_roulette
 
+Partner programming with Ruslan Ardashev (ra86, [ruslan120101](https://github.com/ruslan120101)).
+
 We did an awesome job today in recitation on January 30th, 2015.
 
 We successfully refactored the Bet class' use inside of Game.java.
