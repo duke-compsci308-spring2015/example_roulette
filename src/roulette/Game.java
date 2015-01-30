@@ -15,6 +15,7 @@ public class Game {
     private Bet[] myPossibleBets = { 
         new RedOrBlackBet("Red or Black", 1),
         new OddOrEvenBet("Odd or Even", 1),
+        new TwoConsecNumbersBet("Two in a Row", 17),
         new ThreeConsecNumbersBet("Three in a Row", 11),
         new HighLowBet("High or Low", 1),
         new SingleNumberBet("Single Number", 35)
