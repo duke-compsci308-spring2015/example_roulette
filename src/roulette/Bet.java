@@ -28,6 +28,14 @@ public class Bet {
         return myOdds;
     }
 
+    public String betPrompt(){
+        return null;
+    }
+    
+    public boolean checkResult(String betChoice, Wheel myWheel){
+        return false;
+    }
+    
     /**
      * @return name of this kind of bet
      */
