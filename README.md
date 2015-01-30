@@ -78,4 +78,51 @@ Last but not least, we went ahead and moved the respective calls from the if-sta
 
 ```
 
+```java
+**RedBlackBet.java**
+
+	@Override
+	public boolean checkWin(Wheel w, String choice) {
+		return w.getColor().equals(choice);
+	}
+
+	@Override
+	public String placeBet() {
+		return ConsoleReader.promptOneOf("Please bet", Wheel.BLACK, Wheel.RED);
+	}
+
+```
+
+```java
+**OddEvenBet.java**
+	@Override
+	public boolean checkWin(Wheel w, String choice) {
+		return (w.getNumber() % 2 == 0 && choice.equals("even")) ||
+                (w.getNumber() % 2 == 1 && choice.equals("odd"));
+	}
+
+	@Override
+	public String placeBet() {
+		return ConsoleReader.promptOneOf("Please bet", "even", "odd");
+	}
+
+```
+
+```java
+**NumberBet.java**
+
+	@Override
+	public boolean checkWin(Wheel w, String choice) {
+		int start = Integer.parseInt(choice);
+		return (start <= w.getNumber() && w.getNumber() < start + 3);
+	}
+
+	@Override
+	public String placeBet() {
+		return "" + ConsoleReader.promptRange("Enter first of three consecutive numbers",
+                1, Wheel.NUM_SPOTS - 3);
+	}
+
+```
+
 
