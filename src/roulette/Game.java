@@ -15,7 +15,10 @@ public class Game {
 	private Refactored_Bet[] myPossibleBets = { 
 			new Refactored_Bet("Red or Black", 1),
 			new Refactored_Bet1("Odd or Even", 1),
-			new Refactored_Bet3("Three in a Row", 11)
+			new Refactored_Bet3("Three in a Row", 11),
+			new Option1("High or Low",1),
+			new Option2("Single Number",35),
+			new Option3("Two Consecutive Numbers",17)
 	};
 	private Wheel myWheel;
 
