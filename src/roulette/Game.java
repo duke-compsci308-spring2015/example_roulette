@@ -12,10 +12,13 @@ public class Game {
     // name of the game
     private static final String DEFAULT_NAME = "Roulette";
     // bets player can make
-    private Bet[] myPossibleBets = { 
-        new Bet("Red or Black", 1),
-        new Bet("Odd or Even", 1),
-        new Bet("Three in a Row", 11)
+    private Bet[] myPossibleBets = {
+                                    new RedBlackBet(),
+                                    new OddEvenBet(),
+                                    new ThreeBet(),
+                                    new HighLowBet(),
+                                    new TwoBet(),
+                                    new OneBet()
     };
     private Wheel myWheel;
 
@@ -36,7 +39,7 @@ public class Game {
     /**
      * Play a round of roulette.
      *
-     * Prompt player to make a bet, then spin the roulette wheel, and then verify 
+     * Prompt player to make a bet, then spin the roulette wheel, and then verify
      * that the bet is won or lost.
      *
      * @param player one that wants to play a round of the game
@@ -49,7 +52,8 @@ public class Game {
 
         System.out.print("Spinning ...");
         myWheel.spin();
-        System.out.println(String.format("Dropped into %s %d", myWheel.getColor(), myWheel.getNumber()));
+        System.out.println(String.format("Dropped into %s %d", myWheel.getColor(),
+                                         myWheel.getNumber()));
         if (betIsMade(whichBet, betChoice)) {
             System.out.println("*** Congratulations :) You win ***");
             amount *= myPossibleBets[whichBet].getOdds();
@@ -67,7 +71,8 @@ public class Game {
     private int promptForBet () {
         System.out.println("You can make one of the following types of bets:");
         for (int k = 0; k < myPossibleBets.length; k++) {
-            System.out.println(String.format("%d) %s", (k + 1), myPossibleBets[k].getDescription()));
+            System.out
+                    .println(String.format("%d) %s", (k + 1), myPossibleBets[k].getDescription()));
         }
         return ConsoleReader.promptRange("Please make a choice", 1, myPossibleBets.length) - 1;
     }
@@ -78,19 +83,8 @@ public class Game {
      * @param whichBet specific bet chosen by the user
      */
     private String placeBet (int whichBet) {
-        String result = "";
-        if (whichBet == 0) {
-            result = ConsoleReader.promptOneOf("Please bet", Wheel.BLACK, Wheel.RED);
-        }
-        else if (whichBet == 1) {
-            result = ConsoleReader.promptOneOf("Please bet", "even", "odd");
-        }
-        else if (whichBet == 2) {
-            result = "" + ConsoleReader.promptRange("Enter first of three consecutive numbers",
-                                                    1, Wheel.NUM_SPOTS - 3);
-        }
         System.out.println();
-        return result;
+        return myPossibleBets[whichBet].placeBetPrompt();
     }
 
     /**
@@ -100,19 +94,6 @@ public class Game {
      * @param betChoice specific value user chose to try to win the bet
      */
     private boolean betIsMade (int whichBet, String betChoice) {
-        if (whichBet == 0) {
-            return myWheel.getColor().equals(betChoice);
-        }
-        else if (whichBet == 1) {
-            return (myWheel.getNumber() % 2 == 0 && betChoice.equals("even")) ||
-                   (myWheel.getNumber() % 2 == 1 && betChoice.equals("odd"));
-        }
-        else if (whichBet == 2) {
-            int start = Integer.parseInt(betChoice);
-            return (start <= myWheel.getNumber() && myWheel.getNumber() < start + 3);
-        }
-        else {
-            return false;
-        }
+        return myPossibleBets[whichBet].betWins(myWheel, betChoice);
     }
 }
