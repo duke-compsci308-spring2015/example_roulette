@@ -6,6 +6,9 @@ import roulette.Game;
  * Plays as many games of roulette until the player runs out of money.
  * 
  * @author Robert C. Duvall
+ * Refactored by:
+ * Brooks Sime, Sajal Kantha
+ * bms38, skk21
  */
 public class Main {
     public static void main (String[] args) {
