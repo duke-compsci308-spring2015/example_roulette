@@ -15,7 +15,6 @@ public class RedBlackBet extends Bet {
 
 	@Override
 	public boolean betIsMade(Wheel myWheel, String betChoice) {
-		// TODO Auto-generated method stub
 		return myWheel.getColor().equals(placeBet());
 	}
 

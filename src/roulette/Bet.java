@@ -37,6 +37,4 @@ public abstract class Bet {
     
     public abstract boolean betIsMade(Wheel myWheel, String betChoice);
     
-    
-    
 }
