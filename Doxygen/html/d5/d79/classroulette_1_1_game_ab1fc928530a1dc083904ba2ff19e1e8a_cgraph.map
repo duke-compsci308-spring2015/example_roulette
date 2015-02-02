@@ -1,0 +1,6 @@
+<map id="roulette.Game.promptForBet" name="roulette.Game.promptForBet">
+<area shape="rect" id="node2" href="$d1/daa/classroulette_1_1_bet.html#a0aec26450ea5aeb27412b75544b625ab" title="roulette.Bet.getDescription" alt="" coords="261,5,456,32"/>
+<area shape="rect" id="node3" href="$dd/d87/classutil_1_1_console_reader.html#ac25a6a9c672f8da0b7f37104d33a6cd5" title="util.ConsoleReader.prompt\lRange" alt="" coords="263,57,454,98"/>
+<area shape="rect" id="node4" href="$dd/d87/classutil_1_1_console_reader.html#a501aaaee9e742c28b8731598c964d82e" title="util.ConsoleReader.promptInt" alt="" coords="505,64,711,91"/>
+<area shape="rect" id="node5" href="$dd/d87/classutil_1_1_console_reader.html#a1c9f3a0d6f36a1b8366df3c29c97f22a" title="util.ConsoleReader.prompt\lString" alt="" coords="761,57,951,98"/>
+</map>

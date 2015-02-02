@@ -1,0 +1,19 @@
+<map id="Main.main" name="Main.main">
+<area shape="rect" id="node2" href="$d8/d06/classroulette_1_1_gambler.html#affbe03dbd865c800a75c28ea51eb10e7" title="roulette.Gambler.getName" alt="" coords="141,90,336,116"/>
+<area shape="rect" id="node3" href="$d5/d79/classroulette_1_1_game.html#ae1d34e8b44904d0d6ab9c26271a50f96" title="roulette.Game.getName" alt="" coords="149,140,328,167"/>
+<area shape="rect" id="node4" href="$d8/d06/classroulette_1_1_gambler.html#a6763a051be9a023a23898b42ee340cc7" title="roulette.Gambler.isSolvent" alt="" coords="143,191,335,218"/>
+<area shape="rect" id="node5" href="$d5/d79/classroulette_1_1_game.html#a6634aba4f39043dda3c6bcfa5229971e" title="roulette.Game.play" alt="" coords="166,242,311,268"/>
+<area shape="rect" id="node6" href="$dd/d87/classutil_1_1_console_reader.html#ac25a6a9c672f8da0b7f37104d33a6cd5" title="util.ConsoleReader.prompt\lRange" alt="" coords="666,28,857,69"/>
+<area shape="rect" id="node9" href="$d8/d06/classroulette_1_1_gambler.html#a63da3e4ca7ef7e43e03917df1c16dc12" title="roulette.Gambler.getBankroll" alt="" coords="397,64,603,91"/>
+<area shape="rect" id="node10" href="$d5/d79/classroulette_1_1_game.html#a49ce7e2f4634c106573e87aea20e1663" title="roulette.Game.promptForBet" alt="" coords="396,115,604,142"/>
+<area shape="rect" id="node12" href="$d1/daa/classroulette_1_1_bet.html#abf81fc396eb458983b1c62e0c5140770" title="roulette.Bet.place" alt="" coords="432,166,568,192"/>
+<area shape="rect" id="node13" href="$d6/d07/classroulette_1_1_wheel.html#a27fab03e8b4d589c03199ac774c06ffa" title="roulette.Wheel.spin" alt="" coords="428,216,572,243"/>
+<area shape="rect" id="node14" href="$d6/d07/classroulette_1_1_wheel.html#af6699aa89a029f8b8900f0970db8cdaa" title="roulette.Wheel.getColor" alt="" coords="414,267,586,294"/>
+<area shape="rect" id="node15" href="$d6/d07/classroulette_1_1_wheel.html#ac4db6f5f5c751d9944b605c79e20db6a" title="roulette.Wheel.getNumber" alt="" coords="405,318,595,344"/>
+<area shape="rect" id="node16" href="$d1/daa/classroulette_1_1_bet.html#ae8e824d4e16b7154b483f8d3bb4e9935" title="roulette.Bet.isMade" alt="" coords="427,368,573,395"/>
+<area shape="rect" id="node17" href="$d1/daa/classroulette_1_1_bet.html#a2a5088e88de8398d09c81a19e5ecfe96" title="roulette.Bet.getOdds" alt="" coords="422,419,578,446"/>
+<area shape="rect" id="node18" href="$d8/d06/classroulette_1_1_gambler.html#a5bd476cef22a22e8711d9d3f7acbd8b2" title="roulette.Gambler.updateBankroll" alt="" coords="385,470,615,496"/>
+<area shape="rect" id="node7" href="$dd/d87/classutil_1_1_console_reader.html#a501aaaee9e742c28b8731598c964d82e" title="util.ConsoleReader.promptInt" alt="" coords="907,35,1114,62"/>
+<area shape="rect" id="node8" href="$dd/d87/classutil_1_1_console_reader.html#a1c9f3a0d6f36a1b8366df3c29c97f22a" title="util.ConsoleReader.prompt\lString" alt="" coords="1163,28,1354,69"/>
+<area shape="rect" id="node11" href="$d1/daa/classroulette_1_1_bet.html#a0aec26450ea5aeb27412b75544b625ab" title="roulette.Bet.getDescription" alt="" coords="664,115,859,142"/>
+</map>
