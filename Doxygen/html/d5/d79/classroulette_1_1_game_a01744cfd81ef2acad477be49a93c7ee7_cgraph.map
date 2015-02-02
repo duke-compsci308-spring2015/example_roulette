@@ -1,6 +1,0 @@
-<map id="roulette.Game.placeBet" name="roulette.Game.placeBet">
-<area shape="rect" id="node2" href="$dd/d87/classutil_1_1_console_reader.html#a6b469ca2ba9c0f0e52634a3affb2e9e5" title="util.ConsoleReader.prompt\lOneOf" alt="" coords="478,5,669,46"/>
-<area shape="rect" id="node4" href="$dd/d87/classutil_1_1_console_reader.html#ac25a6a9c672f8da0b7f37104d33a6cd5" title="util.ConsoleReader.prompt\lRange" alt="" coords="230,63,421,105"/>
-<area shape="rect" id="node3" href="$dd/d87/classutil_1_1_console_reader.html#a1c9f3a0d6f36a1b8366df3c29c97f22a" title="util.ConsoleReader.prompt\lString" alt="" coords="726,34,917,75"/>
-<area shape="rect" id="node5" href="$dd/d87/classutil_1_1_console_reader.html#a501aaaee9e742c28b8731598c964d82e" title="util.ConsoleReader.promptInt" alt="" coords="470,71,677,97"/>
-</map>
