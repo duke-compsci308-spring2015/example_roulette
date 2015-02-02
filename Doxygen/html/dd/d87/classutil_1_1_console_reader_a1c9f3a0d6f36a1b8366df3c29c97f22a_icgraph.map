@@ -1,0 +1,12 @@
+<map id="util.ConsoleReader.promptString" name="util.ConsoleReader.promptString">
+<area shape="rect" id="node2" href="$dd/d87/classutil_1_1_console_reader.html#aae4a1ed775c0f804fd26729f4c7109c6" title="util.ConsoleReader.prompt\lDouble" alt="" coords="254,5,445,46"/>
+<area shape="rect" id="node3" href="$dd/d87/classutil_1_1_console_reader.html#a501aaaee9e742c28b8731598c964d82e" title="util.ConsoleReader.promptInt" alt="" coords="246,71,453,97"/>
+<area shape="rect" id="node9" href="$dd/d87/classutil_1_1_console_reader.html#a6b469ca2ba9c0f0e52634a3affb2e9e5" title="util.ConsoleReader.prompt\lOneOf" alt="" coords="254,122,445,163"/>
+<area shape="rect" id="node4" href="$dd/d87/classutil_1_1_console_reader.html#ac25a6a9c672f8da0b7f37104d33a6cd5" title="util.ConsoleReader.prompt\lRange" alt="" coords="507,63,698,105"/>
+<area shape="rect" id="node5" href="$d4/dd1/classroulette_1_1bets_1_1_three_consecutive.html#a083867ce700eac57f0e9763d2391adb5" title="roulette.bets.ThreeConsecutive.place" alt="" coords="753,20,1013,47"/>
+<area shape="rect" id="node6" href="$d5/d79/classroulette_1_1_game.html#a6634aba4f39043dda3c6bcfa5229971e" title="roulette.Game.play" alt="" coords="1062,96,1207,123"/>
+<area shape="rect" id="node8" href="$d5/d79/classroulette_1_1_game.html#a49ce7e2f4634c106573e87aea20e1663" title="roulette.Game.promptForBet" alt="" coords="779,121,987,148"/>
+<area shape="rect" id="node7" href="$d0/d4b/class_main.html#a8a5d0f827edddff706cc0e6740d0579a" title="Main.main" alt="" coords="1256,96,1344,123"/>
+<area shape="rect" id="node10" href="$d4/dcd/classroulette_1_1bets_1_1_odd_even.html#adbb66f09a09b23512c4e3cc49de54ddc" title="roulette.bets.OddEven.place" alt="" coords="501,129,704,156"/>
+<area shape="rect" id="node11" href="$d0/de1/classroulette_1_1bets_1_1_red_black.html#a034a13e28cf4d0325164cd3a6c2b1aec" title="roulette.bets.RedBlack.place" alt="" coords="501,180,704,207"/>
+</map>

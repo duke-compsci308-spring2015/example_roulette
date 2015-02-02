@@ -1,0 +1,5 @@
+<map id="roulette.Bet" name="roulette.Bet">
+<area shape="rect" id="node2" href="$d4/dcd/classroulette_1_1bets_1_1_odd_even.html" title="roulette.bets.OddEven" alt="" coords="5,80,169,107"/>
+<area shape="rect" id="node3" href="$d0/de1/classroulette_1_1bets_1_1_red_black.html" title="roulette.bets.RedBlack" alt="" coords="195,80,359,107"/>
+<area shape="rect" id="node4" href="$d4/dd1/classroulette_1_1bets_1_1_three_consecutive.html" title="roulette.bets.ThreeConsecutive" alt="" coords="383,80,605,107"/>
+</map>
